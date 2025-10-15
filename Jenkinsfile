@@ -15,7 +15,7 @@ pipeline {
     // Fill these with your subnets/SGs. For ALB, we'll reference a target group.
     PRIVATE_SUBNETS = 'subnet-0a3c78c242c89604b,subnet-0f0c79f51c2ddecd1,subnet-02a4c9563ddc27163,subnet-056f9d8990283c097'
     // Security group that allows outbound & inbound from ALB target group
-    SERVICE_SG    = 'sg-xxxxxxxxxxxxxxxxx'
+    SERVICE_SG    = 'sg-sg-0618b0c72a75a39f1'
     // ALB target group ARN for port 8000 (create in step 5)
     TARGET_GROUP_ARN = 'arn:aws:elasticloadbalancing:us-west-2:119952307500:targetgroup/movies-tg/92ab11f847cf227b'
     DESIRED_COUNT = '2'
