@@ -1,0 +1,13 @@
+# Essential Jenkins plugins for AWS integration
+amazon-ecs:1.49
+aws-credentials:191.vcb_f183ce58b_9
+pipeline-stage-view:2.25
+workflow-aggregator:590.v6a_d052e5a_a_b_5
+git:4.13.0
+github:1.37.0
+docker-workflow:563.vd5d2e5c4007f
+pipeline-aws:1.43
+ec2:1.72
+blueocean:1.25.8
+configuration-as-code:1569.vb_72405b_80249
+job-dsl:1.81

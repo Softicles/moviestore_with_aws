@@ -1,0 +1,24 @@
+{
+  "family": "jenkins-agent-test",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "1024",
+  "memory": "2048",
+  "executionRoleArn": "arn:aws:iam::119952307500:role/JenkinsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::119952307500:role/JenkinsTaskRole",
+  "containerDefinitions": [
+    {
+      "name": "agent",
+      "image": "119952307500.dkr.ecr.us-west-2.amazonaws.com/jenkins-agent:latest",
+      "essential": true,
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/jenkins-agents",
+          "awslogs-region": "us-west-2",
+          "awslogs-stream-prefix": "jenkins"
+        }
+      }
+    }
+  ]
+}
